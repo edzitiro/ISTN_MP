@@ -23,6 +23,8 @@ Partial Class Gen_Manager
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.TabPage18 = New System.Windows.Forms.TabPage()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.Button23 = New System.Windows.Forms.Button()
         Me.Button24 = New System.Windows.Forms.Button()
@@ -59,6 +61,9 @@ Partial Class Gen_Manager
         Me.searchPayments = New System.Windows.Forms.Button()
         Me.viewPayments = New System.Windows.Forms.Button()
         Me.TabPage15 = New System.Windows.Forms.TabPage()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.ListBox2 = New System.Windows.Forms.ListBox()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.TextBox52 = New System.Windows.Forms.TextBox()
         Me.TextBox53 = New System.Windows.Forms.TextBox()
         Me.TextBox54 = New System.Windows.Forms.TextBox()
@@ -108,16 +113,14 @@ Partial Class Gen_Manager
         Me.Button15 = New System.Windows.Forms.Button()
         Me.Button16 = New System.Windows.Forms.Button()
         Me.TextBox45 = New System.Windows.Forms.TextBox()
-        Me.TextBox46 = New System.Windows.Forms.TextBox()
         Me.TextBox47 = New System.Windows.Forms.TextBox()
         Me.TextBox48 = New System.Windows.Forms.TextBox()
         Me.TextBox49 = New System.Windows.Forms.TextBox()
         Me.TextBox50 = New System.Windows.Forms.TextBox()
         Me.TextBox51 = New System.Windows.Forms.TextBox()
         Me.Label45 = New System.Windows.Forms.Label()
-        Me.Label46 = New System.Windows.Forms.Label()
-        Me.Label47 = New System.Windows.Forms.Label()
-        Me.Label48 = New System.Windows.Forms.Label()
+        Me.OnHandLabel = New System.Windows.Forms.Label()
+        Me.SellingPriceLabel = New System.Windows.Forms.Label()
         Me.Label49 = New System.Windows.Forms.Label()
         Me.Label50 = New System.Windows.Forms.Label()
         Me.Label51 = New System.Windows.Forms.Label()
@@ -140,11 +143,10 @@ Partial Class Gen_Manager
         Me.Label43 = New System.Windows.Forms.Label()
         Me.Label44 = New System.Windows.Forms.Label()
         Me.TabControl2 = New System.Windows.Forms.TabControl()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.ListBox2 = New System.Windows.Forms.ListBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.VATBox2 = New System.Windows.Forms.CheckBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TabPage18.SuspendLayout()
         Me.TabPage17.SuspendLayout()
         Me.GroupBox7.SuspendLayout()
@@ -173,6 +175,22 @@ Partial Class Gen_Manager
         Me.TabPage18.TabIndex = 10
         Me.TabPage18.Text = "Stock"
         Me.TabPage18.UseVisualStyleBackColor = True
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(220, 249)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(157, 20)
+        Me.TextBox1.TabIndex = 25
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(39, 247)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(122, 23)
+        Me.Button2.TabIndex = 24
+        Me.Button2.Text = "Search for Stock Item"
+        Me.Button2.UseVisualStyleBackColor = True
         '
         'ListBox1
         '
@@ -520,6 +538,31 @@ Partial Class Gen_Manager
         Me.TabPage15.TabIndex = 7
         Me.TabPage15.Text = "Purchase_Order"
         Me.TabPage15.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(395, 18)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(132, 23)
+        Me.Button1.TabIndex = 59
+        Me.Button1.Text = "Search Purchase Order"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'ListBox2
+        '
+        Me.ListBox2.FormattingEnabled = True
+        Me.ListBox2.Items.AddRange(New Object() {"Products Ordered with QTY:"})
+        Me.ListBox2.Location = New System.Drawing.Point(182, 88)
+        Me.ListBox2.Name = "ListBox2"
+        Me.ListBox2.Size = New System.Drawing.Size(154, 95)
+        Me.ListBox2.TabIndex = 58
+        '
+        'DateTimePicker1
+        '
+        Me.DateTimePicker1.Location = New System.Drawing.Point(182, 52)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 20)
+        Me.DateTimePicker1.TabIndex = 57
         '
         'TextBox52
         '
@@ -915,20 +958,22 @@ Partial Class Gen_Manager
         '
         'TabPage13
         '
+        Me.TabPage13.Controls.Add(Me.TextBox2)
+        Me.TabPage13.Controls.Add(Me.Label1)
+        Me.TabPage13.Controls.Add(Me.VATBox2)
+        Me.TabPage13.Controls.Add(Me.CheckBox1)
         Me.TabPage13.Controls.Add(Me.Button14)
         Me.TabPage13.Controls.Add(Me.Button15)
         Me.TabPage13.Controls.Add(Me.Button16)
         Me.TabPage13.Controls.Add(Me.TextBox45)
-        Me.TabPage13.Controls.Add(Me.TextBox46)
         Me.TabPage13.Controls.Add(Me.TextBox47)
         Me.TabPage13.Controls.Add(Me.TextBox48)
         Me.TabPage13.Controls.Add(Me.TextBox49)
         Me.TabPage13.Controls.Add(Me.TextBox50)
         Me.TabPage13.Controls.Add(Me.TextBox51)
         Me.TabPage13.Controls.Add(Me.Label45)
-        Me.TabPage13.Controls.Add(Me.Label46)
-        Me.TabPage13.Controls.Add(Me.Label47)
-        Me.TabPage13.Controls.Add(Me.Label48)
+        Me.TabPage13.Controls.Add(Me.OnHandLabel)
+        Me.TabPage13.Controls.Add(Me.SellingPriceLabel)
         Me.TabPage13.Controls.Add(Me.Label49)
         Me.TabPage13.Controls.Add(Me.Label50)
         Me.TabPage13.Controls.Add(Me.Label51)
@@ -974,13 +1019,6 @@ Partial Class Gen_Manager
         Me.TextBox45.Size = New System.Drawing.Size(100, 20)
         Me.TextBox45.TabIndex = 30
         '
-        'TextBox46
-        '
-        Me.TextBox46.Location = New System.Drawing.Point(143, 205)
-        Me.TextBox46.Name = "TextBox46"
-        Me.TextBox46.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox46.TabIndex = 27
-        '
         'TextBox47
         '
         Me.TextBox47.Location = New System.Drawing.Point(143, 170)
@@ -1025,32 +1063,23 @@ Partial Class Gen_Manager
         Me.Label45.TabIndex = 29
         Me.Label45.Text = "Search "
         '
-        'Label46
+        'OnHandLabel
         '
-        Me.Label46.AutoSize = True
-        Me.Label46.Location = New System.Drawing.Point(65, 205)
-        Me.Label46.Name = "Label46"
-        Me.Label46.Size = New System.Drawing.Size(28, 13)
-        Me.Label46.TabIndex = 28
-        Me.Label46.Text = "VAT"
+        Me.OnHandLabel.AutoSize = True
+        Me.OnHandLabel.Location = New System.Drawing.Point(65, 173)
+        Me.OnHandLabel.Name = "OnHandLabel"
+        Me.OnHandLabel.Size = New System.Drawing.Size(50, 13)
+        Me.OnHandLabel.TabIndex = 22
+        Me.OnHandLabel.Text = "On Hand"
         '
-        'Label47
+        'SellingPriceLabel
         '
-        Me.Label47.AutoSize = True
-        Me.Label47.Location = New System.Drawing.Point(65, 173)
-        Me.Label47.Name = "Label47"
-        Me.Label47.Size = New System.Drawing.Size(74, 13)
-        Me.Label47.TabIndex = 22
-        Me.Label47.Text = "Store Quantity"
-        '
-        'Label48
-        '
-        Me.Label48.AutoSize = True
-        Me.Label48.Location = New System.Drawing.Point(65, 139)
-        Me.Label48.Name = "Label48"
-        Me.Label48.Size = New System.Drawing.Size(54, 13)
-        Me.Label48.TabIndex = 21
-        Me.Label48.Text = "Item Price"
+        Me.SellingPriceLabel.AutoSize = True
+        Me.SellingPriceLabel.Location = New System.Drawing.Point(65, 139)
+        Me.SellingPriceLabel.Name = "SellingPriceLabel"
+        Me.SellingPriceLabel.Size = New System.Drawing.Size(65, 13)
+        Me.SellingPriceLabel.TabIndex = 21
+        Me.SellingPriceLabel.Text = "Selling Price"
         '
         'Label49
         '
@@ -1260,46 +1289,41 @@ Partial Class Gen_Manager
         Me.TabControl2.Size = New System.Drawing.Size(699, 328)
         Me.TabControl2.TabIndex = 1
         '
-        'DateTimePicker1
+        'CheckBox1
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(182, 52)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 20)
-        Me.DateTimePicker1.TabIndex = 57
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.Location = New System.Drawing.Point(0, 0)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(81, 17)
+        Me.CheckBox1.TabIndex = 34
+        Me.CheckBox1.Text = "CheckBox1"
+        Me.CheckBox1.UseVisualStyleBackColor = True
         '
-        'ListBox2
+        'VATBox2
         '
-        Me.ListBox2.FormattingEnabled = True
-        Me.ListBox2.Items.AddRange(New Object() {"Products Ordered with QTY:"})
-        Me.ListBox2.Location = New System.Drawing.Point(182, 88)
-        Me.ListBox2.Name = "ListBox2"
-        Me.ListBox2.Size = New System.Drawing.Size(154, 95)
-        Me.ListBox2.TabIndex = 58
+        Me.VATBox2.AutoSize = True
+        Me.VATBox2.Location = New System.Drawing.Point(67, 223)
+        Me.VATBox2.Name = "VATBox2"
+        Me.VATBox2.Size = New System.Drawing.Size(47, 17)
+        Me.VATBox2.TabIndex = 35
+        Me.VATBox2.Text = "VAT"
+        Me.VATBox2.UseVisualStyleBackColor = True
         '
-        'Button1
+        'Label1
         '
-        Me.Button1.Location = New System.Drawing.Point(395, 18)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(132, 23)
-        Me.Button1.TabIndex = 59
-        Me.Button1.Text = "Search Purchase Order"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(64, 204)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(31, 13)
+        Me.Label1.TabIndex = 36
+        Me.Label1.Text = "Units"
         '
-        'Button2
+        'TextBox2
         '
-        Me.Button2.Location = New System.Drawing.Point(39, 247)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(122, 23)
-        Me.Button2.TabIndex = 24
-        Me.Button2.Text = "Search for Stock Item"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(220, 249)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(157, 20)
-        Me.TextBox1.TabIndex = 25
+        Me.TextBox2.Location = New System.Drawing.Point(143, 201)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox2.TabIndex = 37
         '
         'Gen_Manager
         '
@@ -1419,16 +1443,14 @@ Partial Class Gen_Manager
     Friend WithEvents Button15 As Button
     Friend WithEvents Button16 As Button
     Friend WithEvents TextBox45 As TextBox
-    Friend WithEvents TextBox46 As TextBox
     Friend WithEvents TextBox47 As TextBox
     Friend WithEvents TextBox48 As TextBox
     Friend WithEvents TextBox49 As TextBox
     Friend WithEvents TextBox50 As TextBox
     Friend WithEvents TextBox51 As TextBox
     Friend WithEvents Label45 As Label
-    Friend WithEvents Label46 As Label
-    Friend WithEvents Label47 As Label
-    Friend WithEvents Label48 As Label
+    Friend WithEvents OnHandLabel As Label
+    Friend WithEvents SellingPriceLabel As Label
     Friend WithEvents Label49 As Label
     Friend WithEvents Label50 As Label
     Friend WithEvents Label51 As Label
@@ -1456,4 +1478,8 @@ Partial Class Gen_Manager
     Friend WithEvents DateTimePicker1 As DateTimePicker
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Button2 As Button
+    Friend WithEvents VATBox2 As CheckBox
+    Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents Label1 As Label
 End Class

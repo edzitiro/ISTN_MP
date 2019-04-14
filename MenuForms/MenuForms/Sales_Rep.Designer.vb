@@ -94,11 +94,9 @@ Partial Class Sales_Rep
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.TextBox12 = New System.Windows.Forms.TextBox()
         Me.TextBox11 = New System.Windows.Forms.TextBox()
         Me.TextBox10 = New System.Windows.Forms.TextBox()
         Me.Label13 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
@@ -144,12 +142,17 @@ Partial Class Sales_Rep
         Me.CheckBox2 = New System.Windows.Forms.CheckBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.UnitsColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.Label38 = New System.Windows.Forms.Label()
+        Me.TextBox7 = New System.Windows.Forms.TextBox()
         Me.TabPage1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.TabPage14.SuspendLayout()
@@ -744,9 +747,9 @@ Partial Class Sales_Rep
         Me.Label47.AutoSize = True
         Me.Label47.Location = New System.Drawing.Point(65, 173)
         Me.Label47.Name = "Label47"
-        Me.Label47.Size = New System.Drawing.Size(50, 13)
+        Me.Label47.Size = New System.Drawing.Size(46, 13)
         Me.Label47.TabIndex = 22
-        Me.Label47.Text = "On Hand"
+        Me.Label47.Text = "Quantity"
         '
         'Label48
         '
@@ -828,12 +831,14 @@ Partial Class Sales_Rep
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.TextBox7)
+        Me.GroupBox2.Controls.Add(Me.Label38)
+        Me.GroupBox2.Controls.Add(Me.TextBox2)
+        Me.GroupBox2.Controls.Add(Me.Label12)
         Me.GroupBox2.Controls.Add(Me.CheckBox1)
-        Me.GroupBox2.Controls.Add(Me.TextBox12)
         Me.GroupBox2.Controls.Add(Me.TextBox11)
         Me.GroupBox2.Controls.Add(Me.TextBox10)
         Me.GroupBox2.Controls.Add(Me.Label13)
-        Me.GroupBox2.Controls.Add(Me.Label12)
         Me.GroupBox2.Controls.Add(Me.Label11)
         Me.GroupBox2.Controls.Add(Me.Label3)
         Me.GroupBox2.Controls.Add(Me.Label10)
@@ -846,13 +851,6 @@ Partial Class Sales_Rep
         Me.GroupBox2.TabIndex = 25
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Items"
-        '
-        'TextBox12
-        '
-        Me.TextBox12.Location = New System.Drawing.Point(115, 128)
-        Me.TextBox12.Name = "TextBox12"
-        Me.TextBox12.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox12.TabIndex = 37
         '
         'TextBox11
         '
@@ -875,15 +873,6 @@ Partial Class Sales_Rep
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(0, 13)
         Me.Label13.TabIndex = 34
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(7, 127)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(50, 13)
-        Me.Label12.TabIndex = 2
-        Me.Label12.Text = "On Hand"
         '
         'Label11
         '
@@ -1202,7 +1191,7 @@ Partial Class Sales_Rep
         '
         Me.DataGridView1.AllowUserToOrderColumns = True
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6})
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.UnitsColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6})
         Me.DataGridView1.Location = New System.Drawing.Point(19, 172)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(647, 491)
@@ -1241,7 +1230,7 @@ Partial Class Sales_Rep
         'CheckBox1
         '
         Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(10, 171)
+        Me.CheckBox1.Location = New System.Drawing.Point(10, 185)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(47, 17)
         Me.CheckBox1.TabIndex = 39
@@ -1274,24 +1263,45 @@ Partial Class Sales_Rep
         Me.TextBox1.Size = New System.Drawing.Size(100, 20)
         Me.TextBox1.TabIndex = 36
         '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Location = New System.Drawing.Point(7, 126)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(46, 13)
+        Me.Label12.TabIndex = 40
+        Me.Label12.Text = "Quantity"
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(115, 126)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox2.TabIndex = 41
+        '
         'DataGridViewTextBoxColumn1
         '
         Me.DataGridViewTextBoxColumn1.HeaderText = "Product Code"
         Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
         '
+        'UnitsColumn1
+        '
+        Me.UnitsColumn1.HeaderText = "Product Name"
+        Me.UnitsColumn1.Name = "UnitsColumn1"
+        '
         'DataGridViewTextBoxColumn2
         '
-        Me.DataGridViewTextBoxColumn2.HeaderText = "Product Name"
+        Me.DataGridViewTextBoxColumn2.HeaderText = "Selling Price"
         Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
         '
         'DataGridViewTextBoxColumn3
         '
-        Me.DataGridViewTextBoxColumn3.HeaderText = "Selling Price"
+        Me.DataGridViewTextBoxColumn3.HeaderText = "Quantity"
         Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
         '
         'DataGridViewTextBoxColumn4
         '
-        Me.DataGridViewTextBoxColumn4.HeaderText = "On Hand"
+        Me.DataGridViewTextBoxColumn4.HeaderText = "Units"
         Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
         '
         'DataGridViewTextBoxColumn5
@@ -1307,6 +1317,22 @@ Partial Class Sales_Rep
         Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
         Me.DataGridViewTextBoxColumn6.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
         Me.DataGridViewTextBoxColumn6.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
+        '
+        'Label38
+        '
+        Me.Label38.AutoSize = True
+        Me.Label38.Location = New System.Drawing.Point(8, 153)
+        Me.Label38.Name = "Label38"
+        Me.Label38.Size = New System.Drawing.Size(31, 13)
+        Me.Label38.TabIndex = 42
+        Me.Label38.Text = "Units"
+        '
+        'TextBox7
+        '
+        Me.TextBox7.Location = New System.Drawing.Point(115, 153)
+        Me.TextBox7.Name = "TextBox7"
+        Me.TextBox7.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox7.TabIndex = 43
         '
         'Sales_Rep
         '
@@ -1413,11 +1439,9 @@ End Sub
     Friend WithEvents Button3 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents TextBox12 As TextBox
     Friend WithEvents TextBox11 As TextBox
     Friend WithEvents TextBox10 As TextBox
     Friend WithEvents Label13 As Label
-    Friend WithEvents Label12 As Label
     Friend WithEvents Label11 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label10 As Label
@@ -1463,7 +1487,12 @@ End Sub
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Label7 As Label
     Friend WithEvents CheckBox2 As CheckBox
+    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents Label12 As Label
+    Friend WithEvents TextBox7 As TextBox
+    Friend WithEvents Label38 As Label
     Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
+    Friend WithEvents UnitsColumn1 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn3 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn4 As DataGridViewTextBoxColumn
