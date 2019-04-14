@@ -78,14 +78,12 @@ Partial Class Sales_Rep
         Me.Button15 = New System.Windows.Forms.Button()
         Me.Button16 = New System.Windows.Forms.Button()
         Me.TextBox45 = New System.Windows.Forms.TextBox()
-        Me.TextBox46 = New System.Windows.Forms.TextBox()
         Me.TextBox47 = New System.Windows.Forms.TextBox()
         Me.TextBox48 = New System.Windows.Forms.TextBox()
         Me.TextBox49 = New System.Windows.Forms.TextBox()
         Me.TextBox50 = New System.Windows.Forms.TextBox()
         Me.TextBox51 = New System.Windows.Forms.TextBox()
         Me.Label45 = New System.Windows.Forms.Label()
-        Me.Label46 = New System.Windows.Forms.Label()
         Me.Label47 = New System.Windows.Forms.Label()
         Me.Label48 = New System.Windows.Forms.Label()
         Me.Label49 = New System.Windows.Forms.Label()
@@ -96,13 +94,10 @@ Partial Class Sales_Rep
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.TextBox13 = New System.Windows.Forms.TextBox()
         Me.TextBox12 = New System.Windows.Forms.TextBox()
         Me.TextBox11 = New System.Windows.Forms.TextBox()
         Me.TextBox10 = New System.Windows.Forms.TextBox()
         Me.Label13 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -125,12 +120,6 @@ Partial Class Sales_Rep
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.TabControl2 = New System.Windows.Forms.TabControl()
-        Me.Product_Code = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Product_Name = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Product_Price = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Product_Qty = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Subtotal = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Sales_Total = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.GroupBox6 = New System.Windows.Forms.GroupBox()
         Me.Button1 = New System.Windows.Forms.Button()
@@ -145,26 +134,36 @@ Partial Class Sales_Rep
         Me.CustomerIDTextBox = New System.Windows.Forms.TextBox()
         Me.SalesOrderIDTextBox = New System.Windows.Forms.TextBox()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.Product_Code = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Product_Name = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Product_Price = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Product_Qty = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Subtotal = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Sales_Total = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TabPage1.SuspendLayout
-        Me.GroupBox1.SuspendLayout
-        Me.TabPage14.SuspendLayout
-        Me.GroupBox4.SuspendLayout
-        Me.GroupBox5.SuspendLayout
-        Me.TabPage13.SuspendLayout
-        Me.TabPage12.SuspendLayout
-        Me.GroupBox2.SuspendLayout
-        Me.GroupBox3.SuspendLayout
-        Me.TabControl2.SuspendLayout
-        Me.TabPage2.SuspendLayout
-        Me.GroupBox6.SuspendLayout
-        CType(Me.DataGridView1,System.ComponentModel.ISupportInitialize).BeginInit
-        Me.SuspendLayout
+        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.TabPage1.SuspendLayout()
+        Me.GroupBox1.SuspendLayout()
+        Me.TabPage14.SuspendLayout()
+        Me.GroupBox4.SuspendLayout()
+        Me.GroupBox5.SuspendLayout()
+        Me.TabPage13.SuspendLayout()
+        Me.TabPage12.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
+        Me.GroupBox3.SuspendLayout()
+        Me.TabControl2.SuspendLayout()
+        Me.TabPage2.SuspendLayout()
+        Me.GroupBox6.SuspendLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
         '
         'TabPage1
         '
@@ -175,7 +174,7 @@ Partial Class Sales_Rep
         Me.TabPage1.Size = New System.Drawing.Size(1037, 763)
         Me.TabPage1.TabIndex = 7
         Me.TabPage1.Text = "Payment"
-        Me.TabPage1.UseVisualStyleBackColor = true
+        Me.TabPage1.UseVisualStyleBackColor = True
         '
         'GroupBox1
         '
@@ -200,7 +199,7 @@ Partial Class Sales_Rep
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(672, 296)
         Me.GroupBox1.TabIndex = 0
-        Me.GroupBox1.TabStop = false
+        Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Customer Payment Details"
         '
         'txbUpdatePayment
@@ -217,7 +216,7 @@ Partial Class Sales_Rep
         Me.btnUpdatePayment.Size = New System.Drawing.Size(101, 23)
         Me.btnUpdatePayment.TabIndex = 15
         Me.btnUpdatePayment.Text = "Update Payment"
-        Me.btnUpdatePayment.UseVisualStyleBackColor = true
+        Me.btnUpdatePayment.UseVisualStyleBackColor = True
         '
         'btnAddPayment
         '
@@ -226,7 +225,7 @@ Partial Class Sales_Rep
         Me.btnAddPayment.Size = New System.Drawing.Size(84, 23)
         Me.btnAddPayment.TabIndex = 14
         Me.btnAddPayment.Text = "Add Payment"
-        Me.btnAddPayment.UseVisualStyleBackColor = true
+        Me.btnAddPayment.UseVisualStyleBackColor = True
         '
         'txbCustID
         '
@@ -279,7 +278,7 @@ Partial Class Sales_Rep
         '
         'Label33
         '
-        Me.Label33.AutoSize = true
+        Me.Label33.AutoSize = True
         Me.Label33.Location = New System.Drawing.Point(6, 198)
         Me.Label33.Name = "Label33"
         Me.Label33.Size = New System.Drawing.Size(65, 13)
@@ -288,7 +287,7 @@ Partial Class Sales_Rep
         '
         'Label32
         '
-        Me.Label32.AutoSize = true
+        Me.Label32.AutoSize = True
         Me.Label32.Location = New System.Drawing.Point(7, 171)
         Me.Label32.Name = "Label32"
         Me.Label32.Size = New System.Drawing.Size(67, 13)
@@ -297,7 +296,7 @@ Partial Class Sales_Rep
         '
         'Label31
         '
-        Me.Label31.AutoSize = true
+        Me.Label31.AutoSize = True
         Me.Label31.Location = New System.Drawing.Point(7, 143)
         Me.Label31.Name = "Label31"
         Me.Label31.Size = New System.Drawing.Size(42, 13)
@@ -306,7 +305,7 @@ Partial Class Sales_Rep
         '
         'Label30
         '
-        Me.Label30.AutoSize = true
+        Me.Label30.AutoSize = True
         Me.Label30.Location = New System.Drawing.Point(7, 114)
         Me.Label30.Name = "Label30"
         Me.Label30.Size = New System.Drawing.Size(104, 13)
@@ -315,7 +314,7 @@ Partial Class Sales_Rep
         '
         'Label29
         '
-        Me.Label29.AutoSize = true
+        Me.Label29.AutoSize = True
         Me.Label29.Location = New System.Drawing.Point(7, 86)
         Me.Label29.Name = "Label29"
         Me.Label29.Size = New System.Drawing.Size(86, 13)
@@ -324,7 +323,7 @@ Partial Class Sales_Rep
         '
         'Label2
         '
-        Me.Label2.AutoSize = true
+        Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(10, 55)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(87, 13)
@@ -333,7 +332,7 @@ Partial Class Sales_Rep
         '
         'Label1
         '
-        Me.Label1.AutoSize = true
+        Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(7, 30)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(90, 13)
@@ -353,7 +352,7 @@ Partial Class Sales_Rep
         Me.TabPage14.Size = New System.Drawing.Size(1037, 763)
         Me.TabPage14.TabIndex = 6
         Me.TabPage14.Text = "Customer"
-        Me.TabPage14.UseVisualStyleBackColor = true
+        Me.TabPage14.UseVisualStyleBackColor = True
         '
         'Button5
         '
@@ -362,7 +361,7 @@ Partial Class Sales_Rep
         Me.Button5.Size = New System.Drawing.Size(75, 44)
         Me.Button5.TabIndex = 9
         Me.Button5.Text = "Edit Customer"
-        Me.Button5.UseVisualStyleBackColor = true
+        Me.Button5.UseVisualStyleBackColor = True
         '
         'Button6
         '
@@ -371,7 +370,7 @@ Partial Class Sales_Rep
         Me.Button6.Size = New System.Drawing.Size(75, 44)
         Me.Button6.TabIndex = 8
         Me.Button6.Text = "Search Customer"
-        Me.Button6.UseVisualStyleBackColor = true
+        Me.Button6.UseVisualStyleBackColor = True
         '
         'Button7
         '
@@ -380,7 +379,7 @@ Partial Class Sales_Rep
         Me.Button7.Size = New System.Drawing.Size(75, 44)
         Me.Button7.TabIndex = 7
         Me.Button7.Text = "ADD Customer"
-        Me.Button7.UseVisualStyleBackColor = true
+        Me.Button7.UseVisualStyleBackColor = True
         '
         'GroupBox4
         '
@@ -398,7 +397,7 @@ Partial Class Sales_Rep
         Me.GroupBox4.Name = "GroupBox4"
         Me.GroupBox4.Size = New System.Drawing.Size(209, 195)
         Me.GroupBox4.TabIndex = 6
-        Me.GroupBox4.TabStop = false
+        Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Address"
         '
         'TextBox16
@@ -438,7 +437,7 @@ Partial Class Sales_Rep
         '
         'Label16
         '
-        Me.Label16.AutoSize = true
+        Me.Label16.AutoSize = True
         Me.Label16.Location = New System.Drawing.Point(7, 150)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(64, 13)
@@ -447,7 +446,7 @@ Partial Class Sales_Rep
         '
         'Label17
         '
-        Me.Label17.AutoSize = true
+        Me.Label17.AutoSize = True
         Me.Label17.Location = New System.Drawing.Point(7, 114)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(24, 13)
@@ -456,7 +455,7 @@ Partial Class Sales_Rep
         '
         'Label18
         '
-        Me.Label18.AutoSize = true
+        Me.Label18.AutoSize = True
         Me.Label18.Location = New System.Drawing.Point(7, 81)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(41, 13)
@@ -465,7 +464,7 @@ Partial Class Sales_Rep
         '
         'Label19
         '
-        Me.Label19.AutoSize = true
+        Me.Label19.AutoSize = True
         Me.Label19.Location = New System.Drawing.Point(7, 47)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(78, 13)
@@ -474,7 +473,7 @@ Partial Class Sales_Rep
         '
         'Label20
         '
-        Me.Label20.AutoSize = true
+        Me.Label20.AutoSize = True
         Me.Label20.Location = New System.Drawing.Point(7, 19)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(78, 13)
@@ -503,7 +502,7 @@ Partial Class Sales_Rep
         Me.GroupBox5.Name = "GroupBox5"
         Me.GroupBox5.Size = New System.Drawing.Size(261, 269)
         Me.GroupBox5.TabIndex = 5
-        Me.GroupBox5.TabStop = false
+        Me.GroupBox5.TabStop = False
         Me.GroupBox5.Text = "Customer details"
         '
         'TextBox21
@@ -515,7 +514,7 @@ Partial Class Sales_Rep
         '
         'Label21
         '
-        Me.Label21.AutoSize = true
+        Me.Label21.AutoSize = True
         Me.Label21.Location = New System.Drawing.Point(15, 243)
         Me.Label21.Name = "Label21"
         Me.Label21.Size = New System.Drawing.Size(82, 13)
@@ -566,7 +565,7 @@ Partial Class Sales_Rep
         '
         'Label22
         '
-        Me.Label22.AutoSize = true
+        Me.Label22.AutoSize = True
         Me.Label22.Location = New System.Drawing.Point(15, 22)
         Me.Label22.Name = "Label22"
         Me.Label22.Size = New System.Drawing.Size(68, 13)
@@ -582,7 +581,7 @@ Partial Class Sales_Rep
         '
         'Label23
         '
-        Me.Label23.AutoSize = true
+        Me.Label23.AutoSize = True
         Me.Label23.Location = New System.Drawing.Point(15, 217)
         Me.Label23.Name = "Label23"
         Me.Label23.Size = New System.Drawing.Size(84, 13)
@@ -591,7 +590,7 @@ Partial Class Sales_Rep
         '
         'Label24
         '
-        Me.Label24.AutoSize = true
+        Me.Label24.AutoSize = True
         Me.Label24.Location = New System.Drawing.Point(15, 182)
         Me.Label24.Name = "Label24"
         Me.Label24.Size = New System.Drawing.Size(79, 13)
@@ -600,7 +599,7 @@ Partial Class Sales_Rep
         '
         'Label25
         '
-        Me.Label25.AutoSize = true
+        Me.Label25.AutoSize = True
         Me.Label25.Location = New System.Drawing.Point(14, 147)
         Me.Label25.Name = "Label25"
         Me.Label25.Size = New System.Drawing.Size(80, 13)
@@ -609,7 +608,7 @@ Partial Class Sales_Rep
         '
         'Label26
         '
-        Me.Label26.AutoSize = true
+        Me.Label26.AutoSize = True
         Me.Label26.Location = New System.Drawing.Point(15, 118)
         Me.Label26.Name = "Label26"
         Me.Label26.Size = New System.Drawing.Size(78, 13)
@@ -618,7 +617,7 @@ Partial Class Sales_Rep
         '
         'Label27
         '
-        Me.Label27.AutoSize = true
+        Me.Label27.AutoSize = True
         Me.Label27.Location = New System.Drawing.Point(15, 85)
         Me.Label27.Name = "Label27"
         Me.Label27.Size = New System.Drawing.Size(58, 13)
@@ -627,7 +626,7 @@ Partial Class Sales_Rep
         '
         'Label28
         '
-        Me.Label28.AutoSize = true
+        Me.Label28.AutoSize = True
         Me.Label28.Location = New System.Drawing.Point(15, 52)
         Me.Label28.Name = "Label28"
         Me.Label28.Size = New System.Drawing.Size(57, 13)
@@ -636,18 +635,19 @@ Partial Class Sales_Rep
         '
         'TabPage13
         '
+        Me.TabPage13.Controls.Add(Me.TextBox1)
+        Me.TabPage13.Controls.Add(Me.Label7)
+        Me.TabPage13.Controls.Add(Me.CheckBox2)
         Me.TabPage13.Controls.Add(Me.Button14)
         Me.TabPage13.Controls.Add(Me.Button15)
         Me.TabPage13.Controls.Add(Me.Button16)
         Me.TabPage13.Controls.Add(Me.TextBox45)
-        Me.TabPage13.Controls.Add(Me.TextBox46)
         Me.TabPage13.Controls.Add(Me.TextBox47)
         Me.TabPage13.Controls.Add(Me.TextBox48)
         Me.TabPage13.Controls.Add(Me.TextBox49)
         Me.TabPage13.Controls.Add(Me.TextBox50)
         Me.TabPage13.Controls.Add(Me.TextBox51)
         Me.TabPage13.Controls.Add(Me.Label45)
-        Me.TabPage13.Controls.Add(Me.Label46)
         Me.TabPage13.Controls.Add(Me.Label47)
         Me.TabPage13.Controls.Add(Me.Label48)
         Me.TabPage13.Controls.Add(Me.Label49)
@@ -659,7 +659,7 @@ Partial Class Sales_Rep
         Me.TabPage13.Size = New System.Drawing.Size(1037, 763)
         Me.TabPage13.TabIndex = 5
         Me.TabPage13.Text = "Product"
-        Me.TabPage13.UseVisualStyleBackColor = true
+        Me.TabPage13.UseVisualStyleBackColor = True
         '
         'Button14
         '
@@ -668,7 +668,7 @@ Partial Class Sales_Rep
         Me.Button14.Size = New System.Drawing.Size(75, 38)
         Me.Button14.TabIndex = 33
         Me.Button14.Text = "Add Product"
-        Me.Button14.UseVisualStyleBackColor = true
+        Me.Button14.UseVisualStyleBackColor = True
         '
         'Button15
         '
@@ -677,7 +677,7 @@ Partial Class Sales_Rep
         Me.Button15.Size = New System.Drawing.Size(75, 38)
         Me.Button15.TabIndex = 32
         Me.Button15.Text = "Search"
-        Me.Button15.UseVisualStyleBackColor = true
+        Me.Button15.UseVisualStyleBackColor = True
         '
         'Button16
         '
@@ -686,7 +686,7 @@ Partial Class Sales_Rep
         Me.Button16.Size = New System.Drawing.Size(75, 38)
         Me.Button16.TabIndex = 31
         Me.Button16.Text = "View Product Info"
-        Me.Button16.UseVisualStyleBackColor = true
+        Me.Button16.UseVisualStyleBackColor = True
         '
         'TextBox45
         '
@@ -694,13 +694,6 @@ Partial Class Sales_Rep
         Me.TextBox45.Name = "TextBox45"
         Me.TextBox45.Size = New System.Drawing.Size(100, 20)
         Me.TextBox45.TabIndex = 30
-        '
-        'TextBox46
-        '
-        Me.TextBox46.Location = New System.Drawing.Point(143, 205)
-        Me.TextBox46.Name = "TextBox46"
-        Me.TextBox46.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox46.TabIndex = 27
         '
         'TextBox47
         '
@@ -739,43 +732,34 @@ Partial Class Sales_Rep
         '
         'Label45
         '
-        Me.Label45.AutoSize = true
+        Me.Label45.AutoSize = True
         Me.Label45.Location = New System.Drawing.Point(298, 34)
         Me.Label45.Name = "Label45"
         Me.Label45.Size = New System.Drawing.Size(44, 13)
         Me.Label45.TabIndex = 29
         Me.Label45.Text = "Search "
         '
-        'Label46
-        '
-        Me.Label46.AutoSize = true
-        Me.Label46.Location = New System.Drawing.Point(65, 205)
-        Me.Label46.Name = "Label46"
-        Me.Label46.Size = New System.Drawing.Size(28, 13)
-        Me.Label46.TabIndex = 28
-        Me.Label46.Text = "VAT"
-        '
         'Label47
         '
-        Me.Label47.AutoSize = true
+        Me.Label47.AutoSize = True
         Me.Label47.Location = New System.Drawing.Point(65, 173)
         Me.Label47.Name = "Label47"
-        Me.Label47.Size = New System.Drawing.Size(74, 13)
+        Me.Label47.Size = New System.Drawing.Size(50, 13)
         Me.Label47.TabIndex = 22
-        Me.Label47.Text = "Store Quantity"
+        Me.Label47.Text = "On Hand"
         '
         'Label48
         '
-        Me.Label48.AutoSize = true
+        Me.Label48.AutoSize = True
         Me.Label48.Location = New System.Drawing.Point(65, 139)
         Me.Label48.Name = "Label48"
-        Me.Label48.Size = New System.Drawing.Size(54, 13)
+        Me.Label48.Size = New System.Drawing.Size(65, 13)
         Me.Label48.TabIndex = 21
-        Me.Label48.Text = "Item Price"
+        Me.Label48.Text = "Selling Price"
         '
         'Label49
         '
-        Me.Label49.AutoSize = true
+        Me.Label49.AutoSize = True
         Me.Label49.Location = New System.Drawing.Point(65, 107)
         Me.Label49.Name = "Label49"
         Me.Label49.Size = New System.Drawing.Size(49, 13)
@@ -784,7 +768,7 @@ Partial Class Sales_Rep
         '
         'Label50
         '
-        Me.Label50.AutoSize = true
+        Me.Label50.AutoSize = True
         Me.Label50.Location = New System.Drawing.Point(65, 72)
         Me.Label50.Name = "Label50"
         Me.Label50.Size = New System.Drawing.Size(75, 13)
@@ -793,7 +777,7 @@ Partial Class Sales_Rep
         '
         'Label51
         '
-        Me.Label51.AutoSize = true
+        Me.Label51.AutoSize = True
         Me.Label51.Location = New System.Drawing.Point(65, 38)
         Me.Label51.Name = "Label51"
         Me.Label51.Size = New System.Drawing.Size(72, 13)
@@ -814,11 +798,11 @@ Partial Class Sales_Rep
         Me.TabPage12.Size = New System.Drawing.Size(1037, 763)
         Me.TabPage12.TabIndex = 4
         Me.TabPage12.Text = "Capture_Order"
-        Me.TabPage12.UseVisualStyleBackColor = true
+        Me.TabPage12.UseVisualStyleBackColor = True
         '
         'ListBox2
         '
-        Me.ListBox2.FormattingEnabled = true
+        Me.ListBox2.FormattingEnabled = True
         Me.ListBox2.Location = New System.Drawing.Point(544, 90)
         Me.ListBox2.Name = "ListBox2"
         Me.ListBox2.Size = New System.Drawing.Size(120, 95)
@@ -831,7 +815,7 @@ Partial Class Sales_Rep
         Me.Button3.Size = New System.Drawing.Size(75, 37)
         Me.Button3.TabIndex = 27
         Me.Button3.Text = "Update Order"
-        Me.Button3.UseVisualStyleBackColor = true
+        Me.Button3.UseVisualStyleBackColor = True
         '
         'Button2
         '
@@ -840,17 +824,15 @@ Partial Class Sales_Rep
         Me.Button2.Size = New System.Drawing.Size(75, 37)
         Me.Button2.TabIndex = 26
         Me.Button2.Text = "View Order"
-        Me.Button2.UseVisualStyleBackColor = true
+        Me.Button2.UseVisualStyleBackColor = True
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.TextBox13)
+        Me.GroupBox2.Controls.Add(Me.CheckBox1)
         Me.GroupBox2.Controls.Add(Me.TextBox12)
         Me.GroupBox2.Controls.Add(Me.TextBox11)
         Me.GroupBox2.Controls.Add(Me.TextBox10)
         Me.GroupBox2.Controls.Add(Me.Label13)
-        Me.GroupBox2.Controls.Add(Me.Label7)
-        Me.GroupBox2.Controls.Add(Me.TextBox7)
         Me.GroupBox2.Controls.Add(Me.Label12)
         Me.GroupBox2.Controls.Add(Me.Label11)
         Me.GroupBox2.Controls.Add(Me.Label3)
@@ -862,15 +844,8 @@ Partial Class Sales_Rep
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(228, 208)
         Me.GroupBox2.TabIndex = 25
-        Me.GroupBox2.TabStop = false
+        Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Items"
-        '
-        'TextBox13
-        '
-        Me.TextBox13.Location = New System.Drawing.Point(115, 154)
-        Me.TextBox13.Name = "TextBox13"
-        Me.TextBox13.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox13.TabIndex = 38
         '
         'TextBox12
         '
@@ -895,64 +870,47 @@ Partial Class Sales_Rep
         '
         'Label13
         '
-        Me.Label13.AutoSize = true
+        Me.Label13.AutoSize = True
         Me.Label13.Location = New System.Drawing.Point(7, 153)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(100, 13)
+        Me.Label13.Size = New System.Drawing.Size(0, 13)
         Me.Label13.TabIndex = 34
-        Me.Label13.Text = "Sale Total Exc VAT"
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = true
-        Me.Label7.Location = New System.Drawing.Point(7, 180)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(97, 13)
-        Me.Label7.TabIndex = 33
-        Me.Label7.Text = "Sale Total Inc VAT"
-        '
-        'TextBox7
-        '
-        Me.TextBox7.Location = New System.Drawing.Point(115, 180)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox7.TabIndex = 32
         '
         'Label12
         '
-        Me.Label12.AutoSize = true
+        Me.Label12.AutoSize = True
         Me.Label12.Location = New System.Drawing.Point(7, 127)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(90, 13)
+        Me.Label12.Size = New System.Drawing.Size(50, 13)
         Me.Label12.TabIndex = 2
-        Me.Label12.Text = "Total Product Qty"
+        Me.Label12.Text = "On Hand"
         '
         'Label11
         '
-        Me.Label11.AutoSize = true
+        Me.Label11.AutoSize = True
         Me.Label11.Location = New System.Drawing.Point(7, 98)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(86, 13)
+        Me.Label11.Size = New System.Drawing.Size(100, 13)
         Me.Label11.TabIndex = 1
-        Me.Label11.Text = "Product Quantity"
+        Me.Label11.Text = "Product Description"
         '
         'Label3
         '
-        Me.Label3.AutoSize = true
+        Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(6, 72)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(100, 13)
+        Me.Label3.Size = New System.Drawing.Size(65, 13)
         Me.Label3.TabIndex = 24
-        Me.Label3.Text = "Product Description"
+        Me.Label3.Text = "Selling Price"
         '
         'Label10
         '
-        Me.Label10.AutoSize = true
+        Me.Label10.AutoSize = True
         Me.Label10.Location = New System.Drawing.Point(7, 41)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(71, 13)
+        Me.Label10.Size = New System.Drawing.Size(75, 13)
         Me.Label10.TabIndex = 0
-        Me.Label10.Text = "Product Price"
+        Me.Label10.Text = "Product Name"
         '
         'TextBox3
         '
@@ -963,7 +921,7 @@ Partial Class Sales_Rep
         '
         'Label4
         '
-        Me.Label4.AutoSize = true
+        Me.Label4.AutoSize = True
         Me.Label4.Location = New System.Drawing.Point(7, 16)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(72, 13)
@@ -995,12 +953,12 @@ Partial Class Sales_Rep
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(274, 247)
         Me.GroupBox3.TabIndex = 24
-        Me.GroupBox3.TabStop = false
+        Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "GroupBox3"
         '
         'Label9
         '
-        Me.Label9.AutoSize = true
+        Me.Label9.AutoSize = True
         Me.Label9.Location = New System.Drawing.Point(20, 156)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(53, 13)
@@ -1016,7 +974,7 @@ Partial Class Sales_Rep
         '
         'Label8
         '
-        Me.Label8.AutoSize = true
+        Me.Label8.AutoSize = True
         Me.Label8.Location = New System.Drawing.Point(20, 130)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(42, 13)
@@ -1032,7 +990,7 @@ Partial Class Sales_Rep
         '
         'Label6
         '
-        Me.Label6.AutoSize = true
+        Me.Label6.AutoSize = True
         Me.Label6.Location = New System.Drawing.Point(20, 103)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(112, 13)
@@ -1048,7 +1006,7 @@ Partial Class Sales_Rep
         '
         'Label5
         '
-        Me.Label5.AutoSize = true
+        Me.Label5.AutoSize = True
         Me.Label5.Location = New System.Drawing.Point(20, 77)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(59, 13)
@@ -1064,7 +1022,7 @@ Partial Class Sales_Rep
         '
         'Label14
         '
-        Me.Label14.AutoSize = true
+        Me.Label14.AutoSize = True
         Me.Label14.Location = New System.Drawing.Point(20, 51)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(76, 13)
@@ -1087,7 +1045,7 @@ Partial Class Sales_Rep
         '
         'Label15
         '
-        Me.Label15.AutoSize = true
+        Me.Label15.AutoSize = True
         Me.Label15.Location = New System.Drawing.Point(20, 16)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(76, 13)
@@ -1101,7 +1059,7 @@ Partial Class Sales_Rep
         Me.Button4.Size = New System.Drawing.Size(75, 37)
         Me.Button4.TabIndex = 23
         Me.Button4.Text = "Submit New Order"
-        Me.Button4.UseVisualStyleBackColor = true
+        Me.Button4.UseVisualStyleBackColor = True
         '
         'TabControl2
         '
@@ -1115,6 +1073,140 @@ Partial Class Sales_Rep
         Me.TabControl2.SelectedIndex = 0
         Me.TabControl2.Size = New System.Drawing.Size(1045, 789)
         Me.TabControl2.TabIndex = 2
+        '
+        'TabPage2
+        '
+        Me.TabPage2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.TabPage2.Controls.Add(Me.GroupBox6)
+        Me.TabPage2.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage2.Name = "TabPage2"
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage2.Size = New System.Drawing.Size(1037, 763)
+        Me.TabPage2.TabIndex = 8
+        Me.TabPage2.Text = "Capture Sales Order"
+        Me.TabPage2.UseVisualStyleBackColor = True
+        '
+        'GroupBox6
+        '
+        Me.GroupBox6.AutoSize = True
+        Me.GroupBox6.Controls.Add(Me.Button1)
+        Me.GroupBox6.Controls.Add(Me.ComboBox1)
+        Me.GroupBox6.Controls.Add(Me.OrderDateBox)
+        Me.GroupBox6.Controls.Add(Me.Label34)
+        Me.GroupBox6.Controls.Add(Me.Label35)
+        Me.GroupBox6.Controls.Add(Me.Label36)
+        Me.GroupBox6.Controls.Add(Me.Label37)
+        Me.GroupBox6.Controls.Add(Me.lblSalesOrderId)
+        Me.GroupBox6.Controls.Add(Me.CustomerPaymentIDTextBox)
+        Me.GroupBox6.Controls.Add(Me.CustomerIDTextBox)
+        Me.GroupBox6.Controls.Add(Me.SalesOrderIDTextBox)
+        Me.GroupBox6.Controls.Add(Me.DataGridView1)
+        Me.GroupBox6.Location = New System.Drawing.Point(10, 10)
+        Me.GroupBox6.Name = "GroupBox6"
+        Me.GroupBox6.Size = New System.Drawing.Size(694, 682)
+        Me.GroupBox6.TabIndex = 0
+        Me.GroupBox6.TabStop = False
+        '
+        'Button1
+        '
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(423, 20)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(243, 126)
+        Me.Button1.TabIndex = 37
+        Me.Button1.Text = "Capture Sales Order"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(217, 125)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(200, 21)
+        Me.ComboBox1.TabIndex = 36
+        '
+        'OrderDateBox
+        '
+        Me.OrderDateBox.Location = New System.Drawing.Point(217, 46)
+        Me.OrderDateBox.Name = "OrderDateBox"
+        Me.OrderDateBox.Size = New System.Drawing.Size(200, 20)
+        Me.OrderDateBox.TabIndex = 35
+        '
+        'Label34
+        '
+        Me.Label34.AutoSize = True
+        Me.Label34.Location = New System.Drawing.Point(30, 125)
+        Me.Label34.Name = "Label34"
+        Me.Label34.Size = New System.Drawing.Size(67, 13)
+        Me.Label34.TabIndex = 34
+        Me.Label34.Text = "Employee ID"
+        '
+        'Label35
+        '
+        Me.Label35.AutoSize = True
+        Me.Label35.Location = New System.Drawing.Point(30, 98)
+        Me.Label35.Name = "Label35"
+        Me.Label35.Size = New System.Drawing.Size(109, 13)
+        Me.Label35.TabIndex = 33
+        Me.Label35.Text = "Customer Payment ID"
+        '
+        'Label36
+        '
+        Me.Label36.AutoSize = True
+        Me.Label36.Location = New System.Drawing.Point(30, 72)
+        Me.Label36.Name = "Label36"
+        Me.Label36.Size = New System.Drawing.Size(65, 13)
+        Me.Label36.TabIndex = 32
+        Me.Label36.Text = "Customer ID"
+        '
+        'Label37
+        '
+        Me.Label37.AutoSize = True
+        Me.Label37.Location = New System.Drawing.Point(30, 46)
+        Me.Label37.Name = "Label37"
+        Me.Label37.Size = New System.Drawing.Size(59, 13)
+        Me.Label37.TabIndex = 31
+        Me.Label37.Text = "Order Date"
+        '
+        'lblSalesOrderId
+        '
+        Me.lblSalesOrderId.AutoSize = True
+        Me.lblSalesOrderId.Location = New System.Drawing.Point(30, 20)
+        Me.lblSalesOrderId.Name = "lblSalesOrderId"
+        Me.lblSalesOrderId.Size = New System.Drawing.Size(76, 13)
+        Me.lblSalesOrderId.TabIndex = 30
+        Me.lblSalesOrderId.Text = "Sales Order ID"
+        '
+        'CustomerPaymentIDTextBox
+        '
+        Me.CustomerPaymentIDTextBox.Location = New System.Drawing.Point(217, 98)
+        Me.CustomerPaymentIDTextBox.Name = "CustomerPaymentIDTextBox"
+        Me.CustomerPaymentIDTextBox.Size = New System.Drawing.Size(200, 20)
+        Me.CustomerPaymentIDTextBox.TabIndex = 29
+        '
+        'CustomerIDTextBox
+        '
+        Me.CustomerIDTextBox.Location = New System.Drawing.Point(217, 72)
+        Me.CustomerIDTextBox.Name = "CustomerIDTextBox"
+        Me.CustomerIDTextBox.Size = New System.Drawing.Size(200, 20)
+        Me.CustomerIDTextBox.TabIndex = 28
+        '
+        'SalesOrderIDTextBox
+        '
+        Me.SalesOrderIDTextBox.Location = New System.Drawing.Point(217, 20)
+        Me.SalesOrderIDTextBox.Name = "SalesOrderIDTextBox"
+        Me.SalesOrderIDTextBox.Size = New System.Drawing.Size(200, 20)
+        Me.SalesOrderIDTextBox.TabIndex = 27
+        '
+        'DataGridView1
+        '
+        Me.DataGridView1.AllowUserToOrderColumns = True
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6})
+        Me.DataGridView1.Location = New System.Drawing.Point(19, 172)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.Size = New System.Drawing.Size(647, 491)
+        Me.DataGridView1.TabIndex = 26
         '
         'Product_Code
         '
@@ -1146,139 +1238,41 @@ Partial Class Sales_Rep
         Me.Sales_Total.HeaderText = "Sales Total"
         Me.Sales_Total.Name = "Sales_Total"
         '
-        'TabPage2
+        'CheckBox1
         '
-        Me.TabPage2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.TabPage2.Controls.Add(Me.GroupBox6)
-        Me.TabPage2.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(1037, 763)
-        Me.TabPage2.TabIndex = 8
-        Me.TabPage2.Text = "Capture Sales Order"
-        Me.TabPage2.UseVisualStyleBackColor = true
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.Location = New System.Drawing.Point(10, 171)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(47, 17)
+        Me.CheckBox1.TabIndex = 39
+        Me.CheckBox1.Text = "VAT"
+        Me.CheckBox1.UseVisualStyleBackColor = True
         '
-        'GroupBox6
+        'CheckBox2
         '
-        Me.GroupBox6.AutoSize = true
-        Me.GroupBox6.Controls.Add(Me.Button1)
-        Me.GroupBox6.Controls.Add(Me.ComboBox1)
-        Me.GroupBox6.Controls.Add(Me.OrderDateBox)
-        Me.GroupBox6.Controls.Add(Me.Label34)
-        Me.GroupBox6.Controls.Add(Me.Label35)
-        Me.GroupBox6.Controls.Add(Me.Label36)
-        Me.GroupBox6.Controls.Add(Me.Label37)
-        Me.GroupBox6.Controls.Add(Me.lblSalesOrderId)
-        Me.GroupBox6.Controls.Add(Me.CustomerPaymentIDTextBox)
-        Me.GroupBox6.Controls.Add(Me.CustomerIDTextBox)
-        Me.GroupBox6.Controls.Add(Me.SalesOrderIDTextBox)
-        Me.GroupBox6.Controls.Add(Me.DataGridView1)
-        Me.GroupBox6.Location = New System.Drawing.Point(10, 10)
-        Me.GroupBox6.Name = "GroupBox6"
-        Me.GroupBox6.Size = New System.Drawing.Size(694, 682)
-        Me.GroupBox6.TabIndex = 0
-        Me.GroupBox6.TabStop = false
+        Me.CheckBox2.AutoSize = True
+        Me.CheckBox2.Location = New System.Drawing.Point(68, 234)
+        Me.CheckBox2.Name = "CheckBox2"
+        Me.CheckBox2.Size = New System.Drawing.Size(47, 17)
+        Me.CheckBox2.TabIndex = 34
+        Me.CheckBox2.Text = "VAT"
+        Me.CheckBox2.UseVisualStyleBackColor = True
         '
-        'Button1
+        'Label7
         '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.Button1.Location = New System.Drawing.Point(423, 20)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(243, 126)
-        Me.Button1.TabIndex = 37
-        Me.Button1.Text = "Capture Sales Order"
-        Me.Button1.UseVisualStyleBackColor = true
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(65, 206)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(31, 13)
+        Me.Label7.TabIndex = 35
+        Me.Label7.Text = "Units"
         '
-        'ComboBox1
+        'TextBox1
         '
-        Me.ComboBox1.FormattingEnabled = true
-        Me.ComboBox1.Location = New System.Drawing.Point(217, 125)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(200, 21)
-        Me.ComboBox1.TabIndex = 36
-        '
-        'OrderDateBox
-        '
-        Me.OrderDateBox.Location = New System.Drawing.Point(217, 46)
-        Me.OrderDateBox.Name = "OrderDateBox"
-        Me.OrderDateBox.Size = New System.Drawing.Size(200, 20)
-        Me.OrderDateBox.TabIndex = 35
-        '
-        'Label34
-        '
-        Me.Label34.AutoSize = true
-        Me.Label34.Location = New System.Drawing.Point(30, 125)
-        Me.Label34.Name = "Label34"
-        Me.Label34.Size = New System.Drawing.Size(67, 13)
-        Me.Label34.TabIndex = 34
-        Me.Label34.Text = "Employee ID"
-        '
-        'Label35
-        '
-        Me.Label35.AutoSize = true
-        Me.Label35.Location = New System.Drawing.Point(30, 98)
-        Me.Label35.Name = "Label35"
-        Me.Label35.Size = New System.Drawing.Size(109, 13)
-        Me.Label35.TabIndex = 33
-        Me.Label35.Text = "Customer Payment ID"
-        '
-        'Label36
-        '
-        Me.Label36.AutoSize = true
-        Me.Label36.Location = New System.Drawing.Point(30, 72)
-        Me.Label36.Name = "Label36"
-        Me.Label36.Size = New System.Drawing.Size(65, 13)
-        Me.Label36.TabIndex = 32
-        Me.Label36.Text = "Customer ID"
-        '
-        'Label37
-        '
-        Me.Label37.AutoSize = true
-        Me.Label37.Location = New System.Drawing.Point(30, 46)
-        Me.Label37.Name = "Label37"
-        Me.Label37.Size = New System.Drawing.Size(59, 13)
-        Me.Label37.TabIndex = 31
-        Me.Label37.Text = "Order Date"
-        '
-        'lblSalesOrderId
-        '
-        Me.lblSalesOrderId.AutoSize = true
-        Me.lblSalesOrderId.Location = New System.Drawing.Point(30, 20)
-        Me.lblSalesOrderId.Name = "lblSalesOrderId"
-        Me.lblSalesOrderId.Size = New System.Drawing.Size(76, 13)
-        Me.lblSalesOrderId.TabIndex = 30
-        Me.lblSalesOrderId.Text = "Sales Order ID"
-        '
-        'CustomerPaymentIDTextBox
-        '
-        Me.CustomerPaymentIDTextBox.Location = New System.Drawing.Point(217, 98)
-        Me.CustomerPaymentIDTextBox.Name = "CustomerPaymentIDTextBox"
-        Me.CustomerPaymentIDTextBox.Size = New System.Drawing.Size(200, 20)
-        Me.CustomerPaymentIDTextBox.TabIndex = 29
-        '
-        'CustomerIDTextBox
-        '
-        Me.CustomerIDTextBox.Location = New System.Drawing.Point(217, 72)
-        Me.CustomerIDTextBox.Name = "CustomerIDTextBox"
-        Me.CustomerIDTextBox.Size = New System.Drawing.Size(200, 20)
-        Me.CustomerIDTextBox.TabIndex = 28
-        '
-        'SalesOrderIDTextBox
-        '
-        Me.SalesOrderIDTextBox.Location = New System.Drawing.Point(217, 20)
-        Me.SalesOrderIDTextBox.Name = "SalesOrderIDTextBox"
-        Me.SalesOrderIDTextBox.Size = New System.Drawing.Size(200, 20)
-        Me.SalesOrderIDTextBox.TabIndex = 27
-        '
-        'DataGridView1
-        '
-        Me.DataGridView1.AllowUserToOrderColumns = true
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6})
-        Me.DataGridView1.Location = New System.Drawing.Point(19, 172)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(647, 491)
-        Me.DataGridView1.TabIndex = 26
+        Me.TextBox1.Location = New System.Drawing.Point(143, 203)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox1.TabIndex = 36
         '
         'DataGridViewTextBoxColumn1
         '
@@ -1287,34 +1281,38 @@ Partial Class Sales_Rep
         '
         'DataGridViewTextBoxColumn2
         '
-        Me.DataGridViewTextBoxColumn2.HeaderText = "Name"
+        Me.DataGridViewTextBoxColumn2.HeaderText = "Product Name"
         Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
         '
         'DataGridViewTextBoxColumn3
         '
-        Me.DataGridViewTextBoxColumn3.HeaderText = "Price"
+        Me.DataGridViewTextBoxColumn3.HeaderText = "Selling Price"
         Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
         '
         'DataGridViewTextBoxColumn4
         '
-        Me.DataGridViewTextBoxColumn4.HeaderText = "Quantity"
+        Me.DataGridViewTextBoxColumn4.HeaderText = "On Hand"
         Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
         '
         'DataGridViewTextBoxColumn5
         '
-        Me.DataGridViewTextBoxColumn5.HeaderText = "Subtotal"
+        Me.DataGridViewTextBoxColumn5.HeaderText = "Vat"
         Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        Me.DataGridViewTextBoxColumn5.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridViewTextBoxColumn5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
         '
         'DataGridViewTextBoxColumn6
         '
-        Me.DataGridViewTextBoxColumn6.HeaderText = "Sales Total"
+        Me.DataGridViewTextBoxColumn6.HeaderText = "Active"
         Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
+        Me.DataGridViewTextBoxColumn6.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridViewTextBoxColumn6.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
         '
         'Sales_Rep
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1151, 828)
+        Me.ClientSize = New System.Drawing.Size(1151, 749)
         Me.Controls.Add(Me.TabControl2)
         Me.Name = "Sales_Rep"
         Me.Text = "Sales_Rep"
@@ -1399,14 +1397,12 @@ End Sub
     Friend WithEvents Button15 As Button
     Friend WithEvents Button16 As Button
     Friend WithEvents TextBox45 As TextBox
-    Friend WithEvents TextBox46 As TextBox
     Friend WithEvents TextBox47 As TextBox
     Friend WithEvents TextBox48 As TextBox
     Friend WithEvents TextBox49 As TextBox
     Friend WithEvents TextBox50 As TextBox
     Friend WithEvents TextBox51 As TextBox
     Friend WithEvents Label45 As Label
-    Friend WithEvents Label46 As Label
     Friend WithEvents Label47 As Label
     Friend WithEvents Label48 As Label
     Friend WithEvents Label49 As Label
@@ -1417,13 +1413,10 @@ End Sub
     Friend WithEvents Button3 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents TextBox13 As TextBox
     Friend WithEvents TextBox12 As TextBox
     Friend WithEvents TextBox11 As TextBox
     Friend WithEvents TextBox10 As TextBox
     Friend WithEvents Label13 As Label
-    Friend WithEvents Label7 As Label
-    Friend WithEvents TextBox7 As TextBox
     Friend WithEvents Label12 As Label
     Friend WithEvents Label11 As Label
     Friend WithEvents Label3 As Label
@@ -1466,10 +1459,14 @@ End Sub
     Friend WithEvents CustomerIDTextBox As TextBox
     Friend WithEvents SalesOrderIDTextBox As TextBox
     Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Label7 As Label
+    Friend WithEvents CheckBox2 As CheckBox
     Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn3 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn4 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn5 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn6 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn5 As DataGridViewCheckBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn6 As DataGridViewCheckBoxColumn
 End Class
